@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See Currency Exchange Value</title>
+    <!-- Bootstrap 5 CSS CDN  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Currency Exchange Value</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <div class="form-group">
+                        <label for="from">From</label>
+                        <select class="form-control" id="from" name="from"></select>
+                        <br>
+                        <!-- Input for taking amount -->
+                        <label for="amount">Amount</label>
+
+                        <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter Amount"
+                            value="1">
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="form-group">
+                        <label for="to">To</label>
+                        <select class="form-control" id="to" name="to"></select>
+                        <br>
+                        <label for="result">Result</label>
+                        <input id="result" class="form-control" name="result" placeholder="Result here" readonly />
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <!-- Add bootstrap spinner with display none -->
+                    <div class="text-center invisible" id="spinner">
+                        <div class="spinner-border" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js">
+</script>
+
+</html>
